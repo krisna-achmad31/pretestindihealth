@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_to_trasparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.profile.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frameAccount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="@dimen/margin_1x"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/accent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civAccountImage"
+                        android:layout_width="@dimen/margin_6x"
+                        android:layout_height="@dimen/margin_6x"
+                        android:layout_marginStart="@dimen/margin_1x"
+                        android:layout_marginTop="@dimen/margin_1x"
+                        android:layout_marginBottom="@dimen/margin_1x"
+                        android:src="@drawable/ic_account"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toStartOf="@+id/frameEdit"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <TextView
+                                android:id="@+id/tvUserName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_1x"
+                                android:layout_marginTop="@dimen/margin_2_5x"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/dm_sans_bold"
+                                android:maxLines="1"
+                                android:text="@string/lbl_account_name"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/tvEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_1x"
+                                android:layout_marginTop="@dimen/margin_half"
+                                android:fontFamily="@font/dm_sans_regular"
+                                android:text="@string/lbl_account_email"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/frameEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginEnd="@dimen/margin_1x">
+
+                            <ImageView
+                                android:id="@+id/ivEditProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_edit" />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/frameOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_half"
+                app:layout_constraintTop_toBottomOf="@id/frameAccount"
+                android:background="@color/accent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_half"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/frameLogOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_3_5x"
+                        android:layout_marginTop="@dimen/margin_2x"
+                        android:background="@color/accent">
+
+                        <ImageView
+                            android:id="@+id/ivIconLogOut"
+                            android:layout_width="@dimen/margin_1_5x"
+                            android:layout_height="@dimen/margin_1_5x"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/margin_1x"
+                            android:layout_marginEnd="@dimen/margin_1x"
+                            android:src="@drawable/ic_logout"/>
+
+                        <TextView
+                            android:id="@+id/tvLogOut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/dm_sans_regular"
+                            android:layout_toStartOf="@id/ivLogOut"
+                            android:layout_toEndOf="@id/ivIconLogOut"
+                            android:textSize="16dp"
+                            android:textColor="@color/primary_dark"
+                            android:text="@string/lbl_log_out"/>
+
+                        <ImageView
+                            android:id="@+id/ivLogOut"
+                            android:layout_width="@dimen/margin_2x"
+                            android:layout_height="@dimen/margin_2x"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/margin_1x"
+                            android:src="@drawable/ic_right"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

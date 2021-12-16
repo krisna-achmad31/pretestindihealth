@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "679494677824",
+    "project_id": "pretestindihealth",
+    "storage_bucket": "pretestindihealth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679494677824:android:87e7d0214c3efbeeacf6a5",
+        "android_client_info": {
+          "package_name": "com.kris.indihealthpretest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679494677824-hrmjburte4sbp3febdpdvcu64ja0j45o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kris.indihealthpretest",
+            "certificate_hash": "bf66024d59a2fff0a6ef5657efa73999ce57947a"
+          }
+        },
+        {
+          "client_id": "679494677824-v88vu6i0jlkmksphttrcbupesqvmo0ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSeX1wssomGJZ2uVH874h-cKoqTHwE7-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679494677824-v88vu6i0jlkmksphttrcbupesqvmo0ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

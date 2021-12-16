@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IndiHealth PreTest</string>
+    <string name="lbl_loading">Loading…</string>
+    <string name="lbl_title_on_boarding">Online Consultation</string>
+    <string name="lbl_description_on_boarding">Consulting makes it Better</string>
+    <string name="lbl_on_boarding">Next</string>
+    <string name="lbl_on_boarding_previous"><u>Previous</u></string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_other">Others</string>
+    <string name="lbl_press_back_again_to_exit">press back again to exit</string>
+    <string name="lbl_account_name">Achmad Yukrisna</string>
+    <string name="lbl_account_email">risnaachmad01@gmail.com</string>
+    <string name="lbl_log_out">Log Out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
